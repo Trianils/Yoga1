@@ -1,0 +1,152 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+locale: "de"
+
+collections:
+  - name: "content"
+    label: "Website-Inhalte"
+    files:
+      - name: "de"
+        label: "🇩🇪 Deutsch"
+        file: "content/de.json"
+        fields:
+          - { label: "Navigation", name: "nav", widget: "object", fields: [
+                { label: "Über mich", name: "about", widget: "string" },
+                { label: "Workshops", name: "workshops", widget: "string" },
+                { label: "Online-Kurse", name: "online", widget: "string" },
+                { label: "Kontakt", name: "contact", widget: "string" },
+              ]}
+          - { label: "Hero (Startbereich)", name: "hero", widget: "object", fields: [
+                { label: "Eyebrow (kleine Zeile über der Überschrift)", name: "eyebrow", widget: "string" },
+                { label: "Überschrift Zeile 1", name: "title_line1", widget: "string" },
+                { label: "Überschrift Zeile 2 (kursiv, farbig)", name: "title_em", widget: "string" },
+                { label: "Einleitungstext", name: "lead", widget: "text" },
+                { label: "Button 1 Text", name: "cta1", widget: "string" },
+                { label: "Button 2 Text", name: "cta2", widget: "string" },
+              ]}
+          - { label: "Über mich", name: "about", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Name", name: "name", widget: "string" },
+                { label: "Rolle/Untertitel", name: "role", widget: "string" },
+                { label: "Überschrift", name: "title", widget: "string" },
+                { label: "Text Absatz 1", name: "text1", widget: "text" },
+                { label: "Text Absatz 2", name: "text2", widget: "text" },
+                { label: "Ausbildungen", name: "qualifications", widget: "list", field: { label: "Eintrag", name: "item", widget: "string" } },
+                { label: "Hobby-Zeile", name: "hobby", widget: "string" },
+              ]}
+          - { label: "Workshops-Bereich", name: "workshops", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Überschrift", name: "title", widget: "string" },
+                { label: "Einleitungstext", name: "text", widget: "text" },
+                { label: "Button-Beschriftung (für alle Workshops)", name: "cta_label", widget: "string" },
+                { label: "Workshop-Liste", name: "items", widget: "list", summary: "{{title}}", fields: [
+                      { label: "Tag(e), z. B. 04 oder 25–27", name: "day", widget: "string" },
+                      { label: "Monat, z. B. Sep", name: "month", widget: "string" },
+                      { label: "Titel", name: "title", widget: "string" },
+                      { label: "Info-Zeile (Ort · Zeit · Preis)", name: "meta", widget: "string" },
+                      { label: "Zusatzzeile (optional)", name: "extra", widget: "string", required: false },
+                      { label: "Link zur Buchungsseite", name: "link", widget: "string" },
+                    ]},
+              ]}
+          - { label: "Online-Kurse-Bereich", name: "online", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Überschrift", name: "title", widget: "string" },
+                { label: "Einleitungstext", name: "text", widget: "text" },
+                { label: "Badge-Text (z. B. 'In Vorbereitung')", name: "tag", widget: "string" },
+                { label: "Karten-Überschrift", name: "card_title", widget: "string" },
+                { label: "Karten-Text", name: "card_text", widget: "text" },
+                { label: "Button-Text", name: "cta", widget: "string" },
+                { label: "Newsletter-Link", name: "newsletter_link", widget: "string" },
+              ]}
+          - { label: "Kontakt-Bereich", name: "contact", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Überschrift", name: "title", widget: "string" },
+                { label: "Einleitungstext", name: "text", widget: "text" },
+                { label: "E-Mail-Adresse", name: "email", widget: "string" },
+                { label: "Formularfeld 'Name'", name: "form_name", widget: "string" },
+                { label: "Formularfeld 'E-Mail'", name: "form_email", widget: "string" },
+                { label: "Formularfeld 'Nachricht'", name: "form_message", widget: "string" },
+                { label: "Button 'Senden'", name: "form_submit", widget: "string" },
+                { label: "Hinweistext unter dem Button", name: "form_note", widget: "string" },
+              ]}
+          - { label: "Footer", name: "footer", widget: "object", fields: [
+                { label: "Newsletter-Linktext", name: "newsletter", widget: "string" },
+                { label: "Instagram-Linktext", name: "instagram", widget: "string" },
+                { label: "Instagram-URL", name: "instagram_link", widget: "string" },
+                { label: "Copyright-Name", name: "copyright", widget: "string" },
+              ]}
+
+      - name: "en"
+        label: "🇬🇧 English"
+        file: "content/en.json"
+        fields:
+          - { label: "Navigation", name: "nav", widget: "object", fields: [
+                { label: "About", name: "about", widget: "string" },
+                { label: "Workshops", name: "workshops", widget: "string" },
+                { label: "Online Courses", name: "online", widget: "string" },
+                { label: "Contact", name: "contact", widget: "string" },
+              ]}
+          - { label: "Hero", name: "hero", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Title line 1", name: "title_line1", widget: "string" },
+                { label: "Title line 2 (italic, coloured)", name: "title_em", widget: "string" },
+                { label: "Lead text", name: "lead", widget: "text" },
+                { label: "Button 1 text", name: "cta1", widget: "string" },
+                { label: "Button 2 text", name: "cta2", widget: "string" },
+              ]}
+          - { label: "About", name: "about", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Name", name: "name", widget: "string" },
+                { label: "Role/subtitle", name: "role", widget: "string" },
+                { label: "Heading", name: "title", widget: "string" },
+                { label: "Text paragraph 1", name: "text1", widget: "text" },
+                { label: "Text paragraph 2", name: "text2", widget: "text" },
+                { label: "Qualifications", name: "qualifications", widget: "list", field: { label: "Item", name: "item", widget: "string" } },
+                { label: "Hobby line", name: "hobby", widget: "string" },
+              ]}
+          - { label: "Workshops section", name: "workshops", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Heading", name: "title", widget: "string" },
+                { label: "Lead text", name: "text", widget: "text" },
+                { label: "Button label (all workshops)", name: "cta_label", widget: "string" },
+                { label: "Workshop list", name: "items", widget: "list", summary: "{{title}}", fields: [
+                      { label: "Day(s), e.g. 04 or 25–27", name: "day", widget: "string" },
+                      { label: "Month, e.g. Sep", name: "month", widget: "string" },
+                      { label: "Title", name: "title", widget: "string" },
+                      { label: "Info line (location · time · price)", name: "meta", widget: "string" },
+                      { label: "Extra line (optional)", name: "extra", widget: "string", required: false },
+                      { label: "Booking link", name: "link", widget: "string" },
+                    ]},
+              ]}
+          - { label: "Online courses section", name: "online", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Heading", name: "title", widget: "string" },
+                { label: "Lead text", name: "text", widget: "text" },
+                { label: "Badge text (e.g. 'Coming soon')", name: "tag", widget: "string" },
+                { label: "Card heading", name: "card_title", widget: "string" },
+                { label: "Card text", name: "card_text", widget: "text" },
+                { label: "Button text", name: "cta", widget: "string" },
+                { label: "Newsletter link", name: "newsletter_link", widget: "string" },
+              ]}
+          - { label: "Contact section", name: "contact", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Heading", name: "title", widget: "string" },
+                { label: "Lead text", name: "text", widget: "text" },
+                { label: "Email address", name: "email", widget: "string" },
+                { label: "Form field 'Name'", name: "form_name", widget: "string" },
+                { label: "Form field 'Email'", name: "form_email", widget: "string" },
+                { label: "Form field 'Message'", name: "form_message", widget: "string" },
+                { label: "'Send' button", name: "form_submit", widget: "string" },
+                { label: "Note under button", name: "form_note", widget: "string" },
+              ]}
+          - { label: "Footer", name: "footer", widget: "object", fields: [
+                { label: "Newsletter link text", name: "newsletter", widget: "string" },
+                { label: "Instagram link text", name: "instagram", widget: "string" },
+                { label: "Instagram URL", name: "instagram_link", widget: "string" },
+                { label: "Copyright name", name: "copyright", widget: "string" },
+              ]}

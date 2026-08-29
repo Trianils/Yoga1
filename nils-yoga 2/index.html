@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nils von Münster-Kistner — Yoga, Workshops &amp; Online-Kurse</title>
+<meta name="description" content="Nils von Münster-Kistner, Physiotherapeut MSc. und Yogalehrer aus Klagenfurt am Wörthersee. Präsenz-Workshops und Online-Kurse an der Schnittstelle von Anatomie und Yoga.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+  :root{
+    --bg: #F1EADD;
+    --bg-alt: #E7DDC9;
+    --ink: #2A231D;
+    --ink-soft: #6B5D4F;
+    --wine: #5B2A3A;
+    --wine-deep: #3E1C27;
+    --olive: #6B7353;
+    --tan: #B8935F;
+    --tan-dark: #8A6A3C;
+    --line: rgba(42,35,29,0.14);
+    --radius: 2px;
+    --maxw: 1180px;
+  }
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Work Sans', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3, .display{
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  a{ color: inherit; }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+  .eyebrow{
+    font-family:'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--wine);
+  }
+
+  header{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(241,234,221,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content: space-between;
+    padding: 18px 28px;
+    max-width: var(--maxw); margin:0 auto;
+  }
+  .logo{
+    font-family:'Fraunces', serif; font-size: 21px; font-weight:500;
+    letter-spacing: 0.01em;
+  }
+  .navlinks{ display:flex; gap: 30px; align-items:center; font-size: 14.5px; }
+  .navlinks a{ text-decoration:none; color: var(--ink-soft); transition: color .2s; }
+  .navlinks a:hover{ color: var(--wine); }
+  .langtoggle{
+    display:flex; border:1px solid var(--line); border-radius: 20px; overflow:hidden;
+    font-size: 12px; font-weight:600; letter-spacing: .04em;
+  }
+  .langtoggle button{
+    border:none; background:transparent; padding: 6px 13px; cursor:pointer;
+    color: var(--ink-soft); font-family:'Work Sans',sans-serif;
+  }
+  .langtoggle button.active{ background: var(--wine); color: #fff; }
+  .navmobile-btn{ display:none; background:none; border:none; cursor:pointer; padding:6px; }
+  .navmobile-btn span{ display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; transition:.2s; }
+  .mobile-panel{
+    display:none; flex-direction:column; gap:2px; padding: 8px 28px 20px;
+    border-top:1px solid var(--line);
+  }
+  .mobile-panel.open{ display:flex; }
+  .mobile-panel a{
+    text-decoration:none; color:var(--ink-soft); font-size:16px; padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .hero{
+    display:grid; grid-template-columns: 1.05fr 0.95fr; align-items:center;
+    gap: 48px; max-width: var(--maxw); margin: 0 auto; padding: 64px 28px 88px;
+  }
+  .hero-copy .eyebrow{ margin-bottom: 18px; display:block; }
+  .hero h1{ font-size: clamp(38px, 5.4vw, 62px); line-height: 1.04; }
+  .hero h1 em{ font-style: italic; color: var(--wine); }
+  .hero p.lead{ margin-top: 22px; font-size: 18px; color: var(--ink-soft); max-width: 48ch; }
+  .cta-row{ display:flex; gap: 16px; margin-top: 34px; flex-wrap: wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding: 13px 26px; border-radius: var(--radius);
+    text-decoration:none; font-weight:500; font-size: 15px;
+    transition: transform .18s ease, background .18s ease;
+    border: 1px solid transparent; white-space:nowrap;
+  }
+  .btn-primary{ background: var(--wine); color:#fff; }
+  .btn-primary:hover{ background: var(--wine-deep); transform: translateY(-1px); }
+  .btn-outline{ border-color: var(--ink); color: var(--ink); }
+  .btn-outline:hover{ background: var(--ink); color: var(--bg); }
+  .btn-sm{ padding: 10px 18px; font-size: 13.5px; }
+  .hero-img{ position:relative; border-radius: var(--radius); overflow:hidden; aspect-ratio: 4/5.1; }
+  .hero-img img{ width:100%; height:100%; object-fit:cover; }
+
+  .breath-divider{ width:100%; padding: 6px 0 6px; overflow:hidden; }
+  .breath-divider svg{ width:100%; height:34px; display:block; }
+  .breath-path{
+    fill:none; stroke: var(--tan); stroke-width: 1.4;
+    stroke-dasharray: 900; stroke-dashoffset: 900;
+    transition: stroke-dashoffset 1.6s cubic-bezier(.4,.1,.2,1);
+  }
+  .breath-divider.in-view .breath-path{ stroke-dashoffset: 0; }
+
+  section{ padding: 90px 0; }
+  .section-head{ max-width: 640px; margin-bottom: 52px; }
+  .section-head .eyebrow{ margin-bottom: 14px; display:block; }
+  .section-head h2{ font-size: clamp(28px, 3.6vw, 40px); }
+  .section-head p{ color: var(--ink-soft); margin-top: 14px; font-size: 16.5px; }
+  .alt{ background: var(--bg-alt); }
+
+  .about-grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items:start; }
+  .about-img{ border-radius: var(--radius); overflow:hidden; }
+  .about-img img{ width:100%; object-fit:cover; }
+  .about-name{ font-size: 15px; color: var(--ink-soft); margin-top:14px; }
+  .about-name strong{ color: var(--ink); font-weight:500; }
+  .quals{ list-style:none; padding:0; margin: 24px 0 0; display:grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+  .quals li{ display:flex; gap:10px; align-items:flex-start; color: var(--ink-soft); font-size:14.5px; }
+  .quals li::before{ content:""; width:6px; height:6px; margin-top:8px; border-radius:50%; background: var(--olive); flex-shrink:0; }
+  .hobby-line{ margin-top:22px; font-size:14.5px; color:var(--ink-soft); font-style:italic; }
+
+  .gallery{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 60px; }
+  .gallery img{ width:100%; height: 230px; object-fit:cover; border-radius: var(--radius); }
+  .gallery > *:nth-child(1){ grid-row: span 2; height: 100%; }
+  .gallery > *:nth-child(1) img{ height: 100%; }
+
+  .wlist{ display:flex; flex-direction:column; border-top:1px solid var(--line); }
+  .wrow{
+    display:grid; grid-template-columns: 76px 1fr auto; gap: 24px; align-items:center;
+    padding: 26px 0; border-bottom:1px solid var(--line);
+  }
+  .wdate{
+    font-family:'Fraunces',serif; text-align:center; line-height:1.1;
+    color: var(--wine); background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+    padding: 10px 4px;
+  }
+  .alt .wdate{ background: var(--bg); }
+  .wdate .day{ font-size:22px; display:block; font-weight:500; }
+  .wdate .mon{ font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); font-family:'Work Sans',sans-serif; font-weight:600; }
+  .winfo h3{ font-size: 19px; font-weight:500; margin-bottom:5px; }
+  .winfo .wmeta{ font-size:13.5px; color: var(--tan-dark); font-weight:500; }
+  .winfo .wextra{ font-size:13.5px; color: var(--ink-soft); margin-top:4px; }
+
+  .online-card{
+    background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+    padding: 44px; display:flex; flex-direction:column; gap:16px; align-items:flex-start;
+    max-width: 640px;
+  }
+  .online-card .tag{ font-size:12px; text-transform:uppercase; letter-spacing:.1em; color: var(--olive); font-weight:600; }
+  .online-card h3{ font-size:24px; font-weight:500; }
+  .online-card p{ color: var(--ink-soft); margin:0; font-size:15.5px; }
+
+  .contact-grid{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .contact-info p{ color: var(--ink-soft); }
+  .contact-info a.email{
+    display:inline-block; margin-top: 10px; color: var(--wine); font-weight:500; text-decoration:none;
+    border-bottom: 1px solid var(--wine); font-size: 17px;
+  }
+  form{ display:flex; flex-direction:column; gap: 16px; }
+  .field label{ font-size: 13px; font-weight:500; color: var(--ink-soft); display:block; margin-bottom:6px; }
+  .field input, .field textarea{
+    width:100%; padding: 12px 14px; border:1px solid var(--line); border-radius: var(--radius);
+    font-family:'Work Sans',sans-serif; font-size:15px; background:#fff; color: var(--ink);
+  }
+  .field textarea{ min-height: 120px; resize: vertical; }
+  form .btn{ align-self:flex-start; border:none; cursor:pointer; }
+  .form-note{ font-size:12.5px; color: var(--ink-soft); margin-top:-4px; }
+
+  footer{
+    padding: 40px 0 48px; border-top: 1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;
+  }
+  footer .logo{ font-size:17px; }
+  footer .foot-links{ display:flex; gap:20px; font-size: 13px; color: var(--ink-soft); }
+  footer .foot-links a{ text-decoration:none; color:var(--ink-soft); }
+  footer .foot-links a:hover{ color:var(--wine); }
+
+  .reveal{ opacity:0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in-view{ opacity:1; transform:none; }
+
+  @media (max-width: 880px){
+    .hero{ grid-template-columns: 1fr; padding-top: 40px; }
+    .hero-img{ order:-1; aspect-ratio: 4/3.2; }
+    .about-grid{ grid-template-columns:1fr; }
+    .contact-grid{ grid-template-columns:1fr; }
+    .quals{ grid-template-columns: 1fr; }
+    .gallery{ grid-template-columns: repeat(2,1fr); }
+    .gallery > *:nth-child(1){ grid-row: span 1; height:230px; }
+    .gallery > *:nth-child(1) img{ height:230px; }
+    .navlinks{ display:none; }
+    .navmobile-btn{ display:block; }
+    .wrow{ grid-template-columns: 60px 1fr; }
+    .wrow .btn{ grid-column: 1 / -1; margin-top:8px; }
+    .online-card{ padding:28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Nils</div>
+    <nav class="navlinks">
+      <a href="#about" data-i18n="nav.about">Über mich</a>
+      <a href="#workshops" data-i18n="nav.workshops">Workshops</a>
+      <a href="#online" data-i18n="nav.online">Online-Kurse</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="langtoggle">
+      <button id="btn-de" class="active">DE</button>
+      <button id="btn-en">EN</button>
+    </div>
+    <button class="navmobile-btn" id="mobile-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-panel" id="mobile-panel">
+    <a href="#about" data-i18n="nav.about">Über mich</a>
+    <a href="#workshops" data-i18n="nav.workshops">Workshops</a>
+    <a href="#online" data-i18n="nav.online">Online-Kurse</a>
+    <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+</header>
+
+<section style="padding-bottom:0;">
+  <div class="hero">
+    <div class="hero-copy reveal">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Physiotherapeut &amp; Yogalehrer</span>
+      <h1><span data-i18n="hero.title_line1">Bewegen. Atmen.</span> <em data-i18n="hero.title_em">Ankommen.</em></h1>
+      <p class="lead" data-i18n="hero.lead">…</p>
+      <div class="cta-row">
+        <a href="#workshops" class="btn btn-primary" data-i18n="hero.cta1">Workshops ansehen</a>
+        <a href="#online" class="btn btn-outline" data-i18n="hero.cta2">Online-Kurse entdecken</a>
+      </div>
+    </div>
+    <div class="hero-img reveal">
+      <img src="assets/img/hero.jpg" alt="Nils in einer Handstand-Spagat-Position">
+    </div>
+  </div>
+</section>
+
+<div class="breath-divider wrap" aria-hidden="true"><svg viewBox="0 0 800 34" preserveAspectRatio="none"><path class="breath-path" d="M0,17 C60,17 60,4 120,4 C180,4 180,30 240,30 C300,30 300,17 360,17 C420,17 420,4 480,4 C540,4 540,30 600,30 C660,30 660,17 720,17 C760,17 780,17 800,17"/></svg></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-img"><img src="assets/img/about.jpg" alt="Nils sitzt im Schneidersitz vor einer Yoga-Gruppe"></div>
+        <p class="about-name"><strong data-i18n="about.name">Nils von Münster-Kistner, MSc.</strong><br><span data-i18n="about.role">Physiotherapeut &amp; Yogalehrer</span></p>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Über mich</span>
+        <h2 data-i18n="about.title" style="font-size: clamp(26px,3.2vw,36px); margin-top:12px;">…</h2>
+        <p style="color:var(--ink-soft); margin-top:16px; font-size:16px;" data-i18n="about.text1">…</p>
+        <p style="color:var(--ink-soft); margin-top:12px; font-size:16px;" data-i18n="about.text2">…</p>
+        <ul class="quals" id="quals-list"></ul>
+        <p class="hobby-line" data-i18n="about.hobby">…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="breath-divider wrap" aria-hidden="true"><svg viewBox="0 0 800 34" preserveAspectRatio="none"><path class="breath-path" d="M0,17 C60,17 60,4 120,4 C180,4 180,30 240,30 C300,30 300,17 360,17 C420,17 420,4 480,4 C540,4 540,30 600,30 C660,30 660,17 720,17 C760,17 780,17 800,17"/></svg></div>
+
+<section id="workshops" class="alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="workshops.eyebrow">Vor Ort</span>
+      <h2 data-i18n="workshops.title">Präsenz-Workshops</h2>
+      <p data-i18n="workshops.text">…</p>
+    </div>
+    <div class="gallery reveal">
+      <a href="assets/img/workshop-1.jpg"><img src="assets/img/workshop-1.jpg" alt="Hands-on Assist bei einem Workshop"></a>
+      <a href="assets/img/workshop-2.jpg"><img src="assets/img/workshop-2.jpg" alt="Gruppenübung im Yoga-Workshop"></a>
+      <a href="assets/img/workshop-3.jpg"><img src="assets/img/workshop-3.jpg" alt="Wand-Assist bei einer Rückbeuge"></a>
+      <a href="assets/img/workshop-4.jpg"><img src="assets/img/workshop-4.jpg" alt="Nahaufnahme einer Handjustierung"></a>
+    </div>
+    <div class="wlist reveal" id="workshops-list"></div>
+  </div>
+</section>
+
+<div class="breath-divider wrap" aria-hidden="true"><svg viewBox="0 0 800 34" preserveAspectRatio="none"><path class="breath-path" d="M0,17 C60,17 60,4 120,4 C180,4 180,30 240,30 C300,30 300,17 360,17 C420,17 420,4 480,4 C540,4 540,30 600,30 C660,30 660,17 720,17 C760,17 780,17 800,17"/></svg></div>
+
+<section id="online">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="online.eyebrow">Von überall</span>
+      <h2 data-i18n="online.title">Online-Kurse</h2>
+      <p data-i18n="online.text">…</p>
+    </div>
+    <div class="online-card reveal">
+      <span class="tag" data-i18n="online.tag">In Vorbereitung</span>
+      <h3 data-i18n="online.card_title">…</h3>
+      <p data-i18n="online.card_text">…</p>
+      <a href="#" id="online-cta" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="online.cta">Newsletter abonnieren →</a>
+    </div>
+  </div>
+</section>
+
+<div class="breath-divider wrap" aria-hidden="true"><svg viewBox="0 0 800 34" preserveAspectRatio="none"><path class="breath-path" d="M0,17 C60,17 60,4 120,4 C180,4 180,30 240,30 C300,30 300,17 360,17 C420,17 420,4 480,4 C540,4 540,30 600,30 C660,30 660,17 720,17 C760,17 780,17 800,17"/></svg></div>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Kontakt</span>
+        <h2 style="font-size: clamp(26px,3.2vw,36px); margin-top:12px;" data-i18n="contact.title">…</h2>
+        <p style="margin-top:14px;" data-i18n="contact.text">…</p>
+        <a class="email" id="contact-email" href="#">…</a>
+      </div>
+      <form id="contact-form" class="reveal">
+        <div class="field"><label for="name" data-i18n="contact.form_name">Name</label><input type="text" id="name" name="name" required></div>
+        <div class="field"><label for="email" data-i18n="contact.form_email">E-Mail</label><input type="email" id="email" name="email" required></div>
+        <div class="field"><label for="message" data-i18n="contact.form_message">Nachricht</label><textarea id="message" name="message" required></textarea></div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.form_submit">Nachricht senden</button>
+        <p class="form-note" data-i18n="contact.form_note">…</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; width:100%;">
+    <div class="logo">Nils</div>
+    <div class="foot-links">
+      <a id="footer-instagram" href="#" target="_blank" rel="noopener" data-i18n="footer.instagram">Instagram</a>
+      <a id="footer-newsletter" href="#" target="_blank" rel="noopener" data-i18n="footer.newsletter">Newsletter</a>
+      <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+      <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+      <span>© <span id="year"></span> <span id="footer-copyright" data-i18n="footer.copyright">Nils von Münster-Kistner</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+let CONTENT = { de: null, en: null };
+
+function getByPath(obj, path){
+  return path.split('.').reduce((o,k)=> (o && o[k] !== undefined) ? o[k] : undefined, obj);
+}
+
+function render(lang){
+  const data = CONTENT[lang];
+  if(!data) return;
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const val = getByPath(data, el.getAttribute('data-i18n'));
+    if(val !== undefined) el.innerHTML = val;
+  });
+
+  document.getElementById('quals-list').innerHTML =
+    data.about.qualifications.map(q => `<li>${q}</li>`).join('');
+
+  document.getElementById('workshops-list').innerHTML =
+    data.workshops.items.map(w => `
+      <div class="wrow">
+        <div class="wdate"><span class="day">${w.day}</span><span class="mon">${w.month}</span></div>
+        <div class="winfo">
+          <h3>${w.title}</h3>
+          <div class="wmeta">${w.meta}</div>
+          ${w.extra ? `<div class="wextra">${w.extra}</div>` : ''}
+        </div>
+        <a href="${w.link}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">${data.workshops.cta_label}</a>
+      </div>
+    `).join('');
+
+  document.getElementById('online-cta').href = data.online.newsletter_link;
+  document.getElementById('contact-email').href = 'mailto:' + data.contact.email;
+  document.getElementById('contact-email').textContent = data.contact.email;
+  document.getElementById('footer-instagram').href = data.footer.instagram_link;
+  document.getElementById('footer-newsletter').href = data.online.newsletter_link;
+
+  document.getElementById('btn-de').classList.toggle('active', lang==='de');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  document.getElementById('year').textContent = new Date().getFullYear();
+  localStorage.setItem('nils-lang', lang);
+
+  document.querySelectorAll('.reveal').forEach(el=>{
+    el.classList.remove('in-view');
+    observer.observe(el);
+  });
+}
+
+function pickInitialLang(){
+  const stored = localStorage.getItem('nils-lang');
+  if(stored) return stored;
+  const browserLang = (navigator.language || 'de').slice(0,2).toLowerCase();
+  return browserLang === 'de' ? 'de' : 'en';
+}
+
+Promise.all([
+  fetch('content/de.json').then(r=>r.json()),
+  fetch('content/en.json').then(r=>r.json())
+]).then(([de, en])=>{
+  CONTENT.de = de; CONTENT.en = en;
+  render(pickInitialLang());
+}).catch(err=> console.error('Content konnte nicht geladen werden:', err));
+
+document.getElementById('btn-de').addEventListener('click', ()=>render('de'));
+document.getElementById('btn-en').addEventListener('click', ()=>render('en'));
+
+const mobileToggle = document.getElementById('mobile-toggle');
+const mobilePanel = document.getElementById('mobile-panel');
+mobileToggle.addEventListener('click', ()=> mobilePanel.classList.toggle('open'));
+mobilePanel.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobilePanel.classList.remove('open')));
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); } });
+},{ threshold: 0.15 });
+document.querySelectorAll('.breath-divider').forEach(el=>observer.observe(el));
+
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const to = document.getElementById('contact-email').textContent;
+  const subject = encodeURIComponent("Nachricht von " + name + " über deine Website");
+  const body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+});
+
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+    }
+  });
+}
+</script>
+</body>
+</html>

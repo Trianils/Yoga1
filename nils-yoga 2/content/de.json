@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "workshops": "Workshops",
+    "online": "Online-Kurse",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "Physiotherapeut & Yogalehrer",
+    "title_line1": "Bewegen. Atmen.",
+    "title_em": "Ankommen.",
+    "lead": "Nils von Münster-Kistner verbindet Physiotherapie, Anatomie und Yoga-Praxis — in Präsenz-Workshops und bald auch online. Für alle, die ihren Körper wirklich verstehen wollen.",
+    "cta1": "Workshops ansehen",
+    "cta2": "Online-Kurse entdecken"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "name": "Nils von Münster-Kistner, MSc.",
+    "role": "Physiotherapeut & Yogalehrer, Klagenfurt am Wörthersee",
+    "title": "Wo Anatomie auf Atem trifft.",
+    "text1": "Nils ist leidenschaftlicher Physiotherapeut und Yogalehrer aus Klagenfurt am Wörthersee. In seinen Yogastunden fließen seine Expertise in Gesundheit, Anatomie und Rehabilitation ein — er kombiniert wissenschaftliche Erkenntnisse mit seiner Yoga-Praxis.",
+    "text2": "Er engagiert sich dafür, Menschen zu unterstützen, ihren Körper ganzheitlich zu verstehen und ihr volles Potenzial zu entfalten. Diverse Fortbildungen in Sportphysiotherapie, Viszeraler Osteopathie, Atemphysiotherapie und Biomechanik runden dies ab.",
+    "qualifications": [
+      "200h Inside Yoga",
+      "30h Body Smart Asana",
+      "40h Movement Flow",
+      "30h Chromatic Yoga",
+      "50h Chromatic Yoga",
+      "30h Chromatic Yoga Functional Adjustments",
+      "300h Chromatic Yoga (in Ausbildung)"
+    ],
+    "hobby": "In seiner Freizeit betreibt Nils neben Yoga viele weitere Sportarten wie Brazilian Jiu-Jitsu, Klettern und Radfahren."
+  },
+  "workshops": {
+    "eyebrow": "Vor Ort",
+    "title": "Präsenz-Workshops",
+    "text": "Gemeinsam auf der Matte — mit direktem Feedback, Hands-on-Assists und Raum für Fragen.",
+    "cta_label": "Details & Buchung →",
+    "items": [
+      {
+        "day": "04",
+        "month": "Sep",
+        "title": "Masterclass: Chromatic Yoga — Bowing the Spine",
+        "meta": "YOGALIFE Studio Graz · 18:30–20:00 Uhr · ab 29 €",
+        "extra": "",
+        "link": "https://www.yoga-life.at/masterclass-chromatic-yoga-bowing-the-spine/"
+      },
+      {
+        "day": "05",
+        "month": "Sep",
+        "title": "Blooom Festival Klagenfurt",
+        "meta": "Klagenfurt · Details auf Instagram",
+        "extra": "",
+        "link": "https://www.instagram.com/p/Db8y4PUK6ET/"
+      },
+      {
+        "day": "25–27",
+        "month": "Sep",
+        "title": "20h Yogalehrer-Training: Anatomie & Biomechanik",
+        "meta": "YOGALIFE Studio Graz · ab 400 €",
+        "extra": "Mit Masterclass und täglichen Einheiten",
+        "link": "https://www.yoga-life.at/20-h-yogalehrer-training-anatomie-biomechanik/"
+      },
+      {
+        "day": "2–4",
+        "month": "Okt",
+        "title": "YO & me Yoga Festival",
+        "meta": "YO Yoga-Studio Hilpoltstein",
+        "extra": "Mit den Klassen HIPnotized, The Upside, Shrug It Off & Restore with a Twist",
+        "link": "https://www.yo-hilpoltstein.de/yo-me-yoga-festival-oktober-2026/"
+      },
+      {
+        "day": "24",
+        "month": "Okt",
+        "title": "Workshoptag: Backbends, Anatomie, Handstand",
+        "meta": "Mindbeats, Heuchelheim · 10–18 Uhr · ab 39 € pro Einheit",
+        "extra": "",
+        "link": "https://www.eversports.de/org/activity/126c18c5-92ce-40b2-a37c-464f86a67036"
+      }
+    ]
+  },
+  "online": {
+    "eyebrow": "Von überall",
+    "title": "Online-Kurse",
+    "text": "In deinem eigenen Tempo üben — mit klarer Anleitung, die auch aus der Distanz trägt.",
+    "tag": "In Vorbereitung",
+    "card_title": "Die ersten Online-Kurse kommen bald.",
+    "card_text": "Nils arbeitet an Online-Kursen und E-Books, die Anatomie-Wissen direkt in deine Yoga-Praxis bringen. Trag dich in den Newsletter ein und du erfährst als Erste:r, wenn es losgeht.",
+    "cta": "Newsletter abonnieren →",
+    "newsletter_link": "https://mailchi.mp/9c3dbd7ea04a/lets-fly-with-nils"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Fragen? Schreib mir.",
+    "text": "Ob Frage zum Workshop, Kooperation oder einfach ein Gruß — ich freue mich, von dir zu hören.",
+    "email": "Physionils@gmail.com",
+    "form_name": "Name",
+    "form_email": "E-Mail",
+    "form_message": "Nachricht",
+    "form_submit": "Nachricht senden",
+    "form_note": "Öffnet dein E-Mail-Programm mit vorausgefüllter Nachricht."
+  },
+  "footer": {
+    "newsletter": "Newsletter",
+    "instagram": "Instagram",
+    "instagram_link": "https://instagram.com/trianils",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "copyright": "Nils von Münster-Kistner"
+  }
+}

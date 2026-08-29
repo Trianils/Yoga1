@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung — Nils von Münster-Kistner</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F1EADD; --bg-alt: #E7DDC9; --ink: #2A231D; --ink-soft: #6B5D4F;
+    --wine: #5B2A3A; --wine-deep: #3E1C27; --line: rgba(42,35,29,0.14); --maxw: 780px;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Work Sans',-apple-system,sans-serif; line-height:1.65;
+  }
+  h1,h2{ font-family:'Fraunces',Georgia,serif; font-weight:500; margin:0; }
+  a{ color:var(--wine); }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding: 0 28px; }
+  header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 22px 28px; border-bottom:1px solid var(--line);
+  }
+  header .back{ text-decoration:none; color:var(--ink-soft); font-size:14.5px; }
+  header .back:hover{ color:var(--wine); }
+  .logo{ font-family:'Fraunces',serif; font-size:19px; }
+  .langtoggle{
+    display:flex; border:1px solid var(--line); border-radius:20px; overflow:hidden;
+    font-size:12px; font-weight:600; letter-spacing:.04em;
+  }
+  .langtoggle button{ border:none; background:transparent; padding:6px 13px; cursor:pointer; color:var(--ink-soft); font-family:'Work Sans',sans-serif; }
+  .langtoggle button.active{ background:var(--wine); color:#fff; }
+  main{ padding: 60px 0 100px; }
+  h1{ font-size: clamp(30px,4vw,42px); margin-bottom: 8px; }
+  .updated{ font-size:13px; color:var(--ink-soft); margin-bottom:48px; }
+  section{ margin-bottom:38px; }
+  h2{ font-size:19px; margin-bottom:12px; }
+  h3{ font-family:'Work Sans',sans-serif; font-weight:600; font-size:15px; margin: 18px 0 6px; }
+  p{ margin: 0 0 10px; color:var(--ink); }
+  ul{ margin: 8px 0 10px; padding-left: 20px; }
+  li{ margin-bottom: 6px; }
+  .soft{ color:var(--ink-soft); }
+  dl{ display:grid; grid-template-columns: max-content 1fr; gap: 4px 18px; margin: 10px 0; }
+  dt{ color:var(--ink-soft); font-size:14.5px; }
+  dd{ margin:0; }
+  hr{ border:none; border-top:1px solid var(--line); margin: 44px 0; }
+  .note{
+    background: var(--bg-alt); border-radius:2px; padding:16px 18px;
+    font-size:14px; color:var(--ink-soft); margin-top: 30px;
+  }
+  .toc{ background:#fff; border:1px solid var(--line); border-radius:2px; padding:20px 24px; margin-bottom:44px; }
+  .toc h2{ font-size:15px; text-transform:uppercase; letter-spacing:.08em; color:var(--wine); margin-bottom:10px; }
+  .toc ol{ margin:0; padding-left:18px; }
+  .toc a{ text-decoration:none; color:var(--ink-soft); }
+  .toc a:hover{ color:var(--wine); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nils</div>
+  <a class="back" href="index.html" data-i18n="back">← Zurück zur Startseite</a>
+  <div class="langtoggle">
+    <button id="btn-de" class="active">DE</button>
+    <button id="btn-en">EN</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 data-i18n="title">Datenschutzerklärung</h1>
+  <p class="updated" data-i18n="updated">Stand: 29.08.2026</p>
+
+  <div class="toc">
+    <h2 data-i18n="toc.h">Inhalt</h2>
+    <ol>
+      <li><a href="#verantwortlicher" data-i18n="toc.1">Verantwortlicher</a></li>
+      <li><a href="#allgemein" data-i18n="toc.2">Allgemeines zur Datenverarbeitung</a></li>
+      <li><a href="#hosting" data-i18n="toc.3">Hosting &amp; Server-Logfiles</a></li>
+      <li><a href="#kontakt" data-i18n="toc.4">Kontaktformular</a></li>
+      <li><a href="#fonts" data-i18n="toc.5">Google Fonts</a></li>
+      <li><a href="#extern" data-i18n="toc.6">Externe Links (Newsletter, Instagram, Buchungsseiten)</a></li>
+      <li><a href="#speicherung" data-i18n="toc.7">Lokale Speicherung (Spracheinstellung)</a></li>
+      <li><a href="#rechte" data-i18n="toc.8">Deine Rechte</a></li>
+      <li><a href="#beschwerde" data-i18n="toc.9">Beschwerderecht</a></li>
+    </ol>
+  </div>
+
+  <section id="verantwortlicher">
+    <h2 data-i18n="h.controller">1. Verantwortlicher</h2>
+    <p data-i18n="l.controller_intro">Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:</p>
+    <dl>
+      <dt data-i18n="l.name">Name</dt><dd>Nils-Christian Freiherr von Münster-Kistner, BSc</dd>
+      <dt data-i18n="l.address">Anschrift</dt><dd>Robert-Musil-Straße 10, Tür 1, 9020 Klagenfurt am Wörthersee, Österreich</dd>
+      <dt data-i18n="l.email">E-Mail</dt><dd><a href="mailto:Physionils@gmail.com">Physionils@gmail.com</a></dd>
+    </dl>
+  </section>
+
+  <section id="allgemein">
+    <h2 data-i18n="h.general">2. Allgemeines zur Datenverarbeitung</h2>
+    <p data-i18n="l.general_val">Diese Website verwendet keine Analyse- oder Tracking-Tools und setzt keine Cookies zu Marketing- oder Statistikzwecken. Personenbezogene Daten werden nur verarbeitet, soweit dies für einen funktionsfähigen Auftritt sowie unsere Inhalte und Leistungen erforderlich ist. Rechtsgrundlage ist, soweit nicht anders angegeben, Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am reibungslosen Betrieb der Website) bzw. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. bei Kontaktaufnahme).</p>
+  </section>
+
+  <section id="hosting">
+    <h2 data-i18n="h.hosting">3. Hosting &amp; Server-Logfiles</h2>
+    <p data-i18n="l.hosting_val">Diese Website wird bei Netlify, Inc. (San Francisco, USA) gehostet. Beim Aufruf der Website erhebt Netlify automatisch technische Zugriffsdaten (sogenannte Server-Logfiles), die dein Browser übermittelt, darunter: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Referrer-URL, Browsertyp und Betriebssystem. Diese Daten dienen der technischen Auslieferung und Absicherung der Website und werden nicht mit anderen Datenquellen zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Da Netlify in den USA ansässig ist, kann es zu einer Datenübermittlung in die USA kommen; Netlify verwendet hierfür die von der EU-Kommission anerkannten Standardvertragsklauseln als Garantie für ein angemessenes Datenschutzniveau.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2 data-i18n="h.contact">4. Kontaktformular</h2>
+    <p data-i18n="l.contact_val">Das Kontaktformular auf dieser Website öffnet dein eigenes E-Mail-Programm mit einer vorausgefüllten Nachricht an Physionils@gmail.com — die eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) werden dabei nicht an einen Server dieser Website übermittelt oder dort gespeichert, sondern erst durch den Versand deiner E-Mail über dein eigenes E-Mail-Programm verarbeitet. Es gelten die üblichen Regeln für die E-Mail-Korrespondenz; die Daten werden zur Bearbeitung deiner Anfrage genutzt und nicht an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a bzw. lit. b DSGVO (Anbahnung eines Vertrags bzw. Einwilligung durch aktives Absenden).</p>
+  </section>
+
+  <section id="fonts">
+    <h2 data-i18n="h.fonts">5. Google Fonts</h2>
+    <p data-i18n="l.fonts_val">Diese Website bindet Schriftarten von Google Fonts ein, die von Servern von Google LLC (USA) geladen werden. Dabei kann deine IP-Adresse an Google übermittelt werden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (einheitliche und ansprechende Darstellung der Website). Mehr Informationen zum Umgang mit Nutzerdaten findest du in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+  </section>
+
+  <section id="extern">
+    <h2 data-i18n="h.external">6. Externe Links (Newsletter, Instagram, Buchungsseiten)</h2>
+    <p data-i18n="l.external_val">Diese Website enthält Links zu externen Angeboten, u. a. zu einem Newsletter-Anmeldeformular (Mailchimp, betrieben von The Rocket Science Group LLC, USA), zu Instagram (Meta Platforms Ireland Ltd.) sowie zu externen Buchungs- und Ticketseiten für Workshops (z. B. Eversports, yoga-life.at). Diese Seiten werden erst beim Anklicken geöffnet; es findet keine automatische Datenübertragung beim bloßen Besuch dieser Website statt. Für die Datenverarbeitung auf den verlinkten Seiten sind die jeweiligen Anbieter verantwortlich — es gelten deren eigene Datenschutzerklärungen.</p>
+  </section>
+
+  <section id="speicherung">
+    <h2 data-i18n="h.storage">7. Lokale Speicherung (Spracheinstellung)</h2>
+    <p data-i18n="l.storage_val">Diese Website speichert deine gewählte Sprache (Deutsch/Englisch) im lokalen Speicher deines Browsers (localStorage), damit die Einstellung bei einem erneuten Besuch erhalten bleibt. Es werden dabei keine personenbezogenen Daten an einen Server übertragen; die Information verbleibt ausschließlich auf deinem Gerät. Du kannst diese Daten jederzeit über die Einstellungen deines Browsers löschen.</p>
+  </section>
+
+  <section id="rechte">
+    <h2 data-i18n="h.rights">8. Deine Rechte</h2>
+    <p data-i18n="l.rights_intro">Dir stehen nach der DSGVO folgende Rechte zu:</p>
+    <ul>
+      <li data-i18n="l.right1">Auskunft über die zu deiner Person gespeicherten Daten (Art. 15 DSGVO)</li>
+      <li data-i18n="l.right2">Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+      <li data-i18n="l.right3">Löschung deiner Daten (Art. 17 DSGVO)</li>
+      <li data-i18n="l.right4">Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li data-i18n="l.right5">Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li data-i18n="l.right6">Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+    </ul>
+    <p data-i18n="l.rights_contact">Zur Ausübung dieser Rechte genügt eine formlose E-Mail an <a href="mailto:Physionils@gmail.com">Physionils@gmail.com</a>.</p>
+  </section>
+
+  <section id="beschwerde">
+    <h2 data-i18n="h.complaint">9. Beschwerderecht</h2>
+    <p data-i18n="l.complaint_val">Du hast das Recht, dich bei der zuständigen Aufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen die DSGVO verstößt:</p>
+    <p><strong>Österreichische Datenschutzbehörde</strong><br>Barichgasse 40–42, 1030 Wien<br><a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a></p>
+  </section>
+
+  <div class="note" data-i18n="l.langnote">Rechtlich verbindlich ist die deutsche Fassung dieser Datenschutzerklärung.</div>
+</main>
+
+<script>
+const i18n = {
+  de: {
+    "back":"← Zurück zur Startseite",
+    "title":"Datenschutzerklärung",
+    "updated":"Stand: 29.08.2026",
+    "toc.h":"Inhalt",
+    "toc.1":"Verantwortlicher","toc.2":"Allgemeines zur Datenverarbeitung","toc.3":"Hosting & Server-Logfiles",
+    "toc.4":"Kontaktformular","toc.5":"Google Fonts","toc.6":"Externe Links (Newsletter, Instagram, Buchungsseiten)",
+    "toc.7":"Lokale Speicherung (Spracheinstellung)","toc.8":"Deine Rechte","toc.9":"Beschwerderecht",
+    "h.controller":"1. Verantwortlicher",
+    "l.controller_intro":"Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:",
+    "l.name":"Name","l.address":"Anschrift","l.email":"E-Mail",
+    "h.general":"2. Allgemeines zur Datenverarbeitung",
+    "l.general_val":"Diese Website verwendet keine Analyse- oder Tracking-Tools und setzt keine Cookies zu Marketing- oder Statistikzwecken. Personenbezogene Daten werden nur verarbeitet, soweit dies für einen funktionsfähigen Auftritt sowie unsere Inhalte und Leistungen erforderlich ist. Rechtsgrundlage ist, soweit nicht anders angegeben, Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am reibungslosen Betrieb der Website) bzw. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. bei Kontaktaufnahme).",
+    "h.hosting":"3. Hosting & Server-Logfiles",
+    "l.hosting_val":"Diese Website wird bei Netlify, Inc. (San Francisco, USA) gehostet. Beim Aufruf der Website erhebt Netlify automatisch technische Zugriffsdaten (sogenannte Server-Logfiles), die dein Browser übermittelt, darunter: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Referrer-URL, Browsertyp und Betriebssystem. Diese Daten dienen der technischen Auslieferung und Absicherung der Website und werden nicht mit anderen Datenquellen zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Da Netlify in den USA ansässig ist, kann es zu einer Datenübermittlung in die USA kommen; Netlify verwendet hierfür die von der EU-Kommission anerkannten Standardvertragsklauseln als Garantie für ein angemessenes Datenschutzniveau.",
+    "h.contact":"4. Kontaktformular",
+    "l.contact_val":"Das Kontaktformular auf dieser Website öffnet dein eigenes E-Mail-Programm mit einer vorausgefüllten Nachricht an Physionils@gmail.com — die eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) werden dabei nicht an einen Server dieser Website übermittelt oder dort gespeichert, sondern erst durch den Versand deiner E-Mail über dein eigenes E-Mail-Programm verarbeitet. Es gelten die üblichen Regeln für die E-Mail-Korrespondenz; die Daten werden zur Bearbeitung deiner Anfrage genutzt und nicht an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a bzw. lit. b DSGVO (Anbahnung eines Vertrags bzw. Einwilligung durch aktives Absenden).",
+    "h.fonts":"5. Google Fonts",
+    "l.fonts_val":"Diese Website bindet Schriftarten von Google Fonts ein, die von Servern von Google LLC (USA) geladen werden. Dabei kann deine IP-Adresse an Google übermittelt werden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (einheitliche und ansprechende Darstellung der Website). Mehr Informationen zum Umgang mit Nutzerdaten findest du in der Datenschutzerklärung von Google: <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">policies.google.com/privacy</a>.",
+    "h.external":"6. Externe Links (Newsletter, Instagram, Buchungsseiten)",
+    "l.external_val":"Diese Website enthält Links zu externen Angeboten, u. a. zu einem Newsletter-Anmeldeformular (Mailchimp, betrieben von The Rocket Science Group LLC, USA), zu Instagram (Meta Platforms Ireland Ltd.) sowie zu externen Buchungs- und Ticketseiten für Workshops (z. B. Eversports, yoga-life.at). Diese Seiten werden erst beim Anklicken geöffnet; es findet keine automatische Datenübertragung beim bloßen Besuch dieser Website statt. Für die Datenverarbeitung auf den verlinkten Seiten sind die jeweiligen Anbieter verantwortlich — es gelten deren eigene Datenschutzerklärungen.",
+    "h.storage":"7. Lokale Speicherung (Spracheinstellung)",
+    "l.storage_val":"Diese Website speichert deine gewählte Sprache (Deutsch/Englisch) im lokalen Speicher deines Browsers (localStorage), damit die Einstellung bei einem erneuten Besuch erhalten bleibt. Es werden dabei keine personenbezogenen Daten an einen Server übertragen; die Information verbleibt ausschließlich auf deinem Gerät. Du kannst diese Daten jederzeit über die Einstellungen deines Browsers löschen.",
+    "h.rights":"8. Deine Rechte",
+    "l.rights_intro":"Dir stehen nach der DSGVO folgende Rechte zu:",
+    "l.right1":"Auskunft über die zu deiner Person gespeicherten Daten (Art. 15 DSGVO)",
+    "l.right2":"Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+    "l.right3":"Löschung deiner Daten (Art. 17 DSGVO)",
+    "l.right4":"Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+    "l.right5":"Datenübertragbarkeit (Art. 20 DSGVO)",
+    "l.right6":"Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+    "l.rights_contact":"Zur Ausübung dieser Rechte genügt eine formlose E-Mail an <a href=\"mailto:Physionils@gmail.com\">Physionils@gmail.com</a>.",
+    "h.complaint":"9. Beschwerderecht",
+    "l.complaint_val":"Du hast das Recht, dich bei der zuständigen Aufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen die DSGVO verstößt:",
+    "l.langnote":"Rechtlich verbindlich ist die deutsche Fassung dieser Datenschutzerklärung."
+  },
+  en: {
+    "back":"← Back to homepage",
+    "title":"Privacy Policy",
+    "updated":"Last updated: 29 Aug 2026",
+    "toc.h":"Contents",
+    "toc.1":"Data Controller","toc.2":"General Information","toc.3":"Hosting & Server Log Files",
+    "toc.4":"Contact Form","toc.5":"Google Fonts","toc.6":"External Links (Newsletter, Instagram, Booking Pages)",
+    "toc.7":"Local Storage (Language Preference)","toc.8":"Your Rights","toc.9":"Right to Lodge a Complaint",
+    "h.controller":"1. Data Controller",
+    "l.controller_intro":"The controller responsible for data processing on this website within the meaning of the GDPR is:",
+    "l.name":"Name","l.address":"Address","l.email":"Email",
+    "h.general":"2. General Information",
+    "l.general_val":"This website does not use any analytics or tracking tools and does not set cookies for marketing or statistical purposes. Personal data is only processed to the extent necessary for a functioning website and our content and services. Unless stated otherwise, the legal basis is Art. 6(1)(f) GDPR (legitimate interest in the smooth operation of the website) or Art. 6(1)(a) GDPR (consent, e.g. when making contact).",
+    "h.hosting":"3. Hosting & Server Log Files",
+    "l.hosting_val":"This website is hosted by Netlify, Inc. (San Francisco, USA). When you visit the website, Netlify automatically collects technical access data (so-called server log files) transmitted by your browser, including: IP address, date and time of the request, page requested, referrer URL, browser type and operating system. This data is used for the technical delivery and security of the website and is not combined with other data sources. The legal basis is Art. 6(1)(f) GDPR. As Netlify is based in the USA, data may be transferred there; Netlify relies on the EU Commission's Standard Contractual Clauses as a safeguard for an adequate level of data protection.",
+    "h.contact":"4. Contact Form",
+    "l.contact_val":"The contact form on this website opens your own email application with a pre-filled message addressed to Physionils@gmail.com — the data you enter (name, email address, message) is not transmitted to or stored on a server operated by this website; it is only processed once you send the email via your own email application. Standard rules for email correspondence apply; the data is used to handle your enquiry and is not shared with third parties. The legal basis is Art. 6(1)(a) or (b) GDPR (pre-contractual measures or consent through actively sending the message).",
+    "h.fonts":"5. Google Fonts",
+    "l.fonts_val":"This website embeds fonts from Google Fonts, which are loaded from Google LLC (USA) servers. In doing so, your IP address may be transmitted to Google. The legal basis is Art. 6(1)(f) GDPR (consistent and appealing presentation of the website). More information on how Google handles user data can be found in Google's privacy policy: <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">policies.google.com/privacy</a>.",
+    "h.external":"6. External Links (Newsletter, Instagram, Booking Pages)",
+    "l.external_val":"This website contains links to external services, including a newsletter sign-up page (Mailchimp, operated by The Rocket Science Group LLC, USA), Instagram (Meta Platforms Ireland Ltd.), and external booking and ticketing pages for workshops (e.g. Eversports, yoga-life.at). These pages only open once clicked; no automatic data transfer occurs simply by visiting this website. The respective providers are responsible for data processing on their own pages — their own privacy policies apply.",
+    "h.storage":"7. Local Storage (Language Preference)",
+    "l.storage_val":"This website stores your selected language (German/English) in your browser's local storage (localStorage) so the setting is remembered on your next visit. No personal data is transmitted to a server in the process; the information stays on your device only. You can delete this data at any time via your browser settings.",
+    "h.rights":"8. Your Rights",
+    "l.rights_intro":"Under the GDPR, you have the following rights:",
+    "l.right1":"Right of access to your stored data (Art. 15 GDPR)",
+    "l.right2":"Right to rectification of inaccurate data (Art. 16 GDPR)",
+    "l.right3":"Right to erasure (Art. 17 GDPR)",
+    "l.right4":"Right to restriction of processing (Art. 18 GDPR)",
+    "l.right5":"Right to data portability (Art. 20 GDPR)",
+    "l.right6":"Right to object to processing (Art. 21 GDPR)",
+    "l.rights_contact":"To exercise these rights, an informal email to <a href=\"mailto:Physionils@gmail.com\">Physionils@gmail.com</a> is sufficient.",
+    "h.complaint":"9. Right to Lodge a Complaint",
+    "l.complaint_val":"You have the right to lodge a complaint with the competent supervisory authority if you believe that the processing of your data violates the GDPR:",
+    "l.langnote":"The German version of this privacy policy is the legally binding one."
+  }
+};
+
+function applyLang(lang){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const val = i18n[lang][el.getAttribute('data-i18n')];
+    if(val !== undefined) el.innerHTML = val;
+  });
+  document.getElementById('btn-de').classList.toggle('active', lang==='de');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+}
+document.getElementById('btn-de').addEventListener('click', ()=>applyLang('de'));
+document.getElementById('btn-en').addEventListener('click', ()=>applyLang('en'));
+const browserLang = (navigator.language || 'de').slice(0,2).toLowerCase();
+applyLang(browserLang === 'de' ? 'de' : 'en');
+</script>
+</body>
+</html>
