@@ -9,7 +9,7 @@
     "eyebrow": "Physiotherapeut & Yogalehrer",
     "title_line1": "Bewegen. Atmen.",
     "title_em": "Ankommen.",
-    "lead": "Nils von Münster-Kistner verbindet Physiotherapie, Anatomie und Yoga-Praxis — in Präsenz-Workshops und bald auch online. Für alle, die ihren Körper wirklich verstehen wollen.",
+    "lead": "Nils von Münster-Kistner verbindet Physiotherapie, Anatomie und Yoga-Praxis, in Präsenz-Workshops und bald auch online. Für alle, die ihren Körper wirklich verstehen wollen.",
     "cta1": "Workshops ansehen",
     "cta2": "Online-Kurse entdecken"
   },
@@ -18,7 +18,7 @@
     "name": "Nils von Münster-Kistner, MSc.",
     "role": "Physiotherapeut & Yogalehrer, Klagenfurt am Wörthersee",
     "title": "Wo Anatomie auf Atem trifft.",
-    "text1": "Nils ist leidenschaftlicher Physiotherapeut und Yogalehrer aus Klagenfurt am Wörthersee. In seinen Yogastunden fließen seine Expertise in Gesundheit, Anatomie und Rehabilitation ein — er kombiniert wissenschaftliche Erkenntnisse mit seiner Yoga-Praxis.",
+    "text1": "Nils ist leidenschaftlicher Physiotherapeut und Yogalehrer aus Klagenfurt am Wörthersee. In seinen Yogastunden fließen seine Expertise in Gesundheit, Anatomie und Rehabilitation ein. Nils kombiniert wissenschaftliche Erkenntnisse mit seiner Yoga-Praxis.",
     "text2": "Er engagiert sich dafür, Menschen zu unterstützen, ihren Körper ganzheitlich zu verstehen und ihr volles Potenzial zu entfalten. Diverse Fortbildungen in Sportphysiotherapie, Viszeraler Osteopathie, Atemphysiotherapie und Biomechanik runden dies ab.",
     "qualifications": [
       "200h Inside Yoga",
@@ -29,12 +29,12 @@
       "30h Chromatic Yoga Functional Adjustments",
       "300h Chromatic Yoga (in Ausbildung)"
     ],
-    "hobby": "In seiner Freizeit betreibt Nils neben Yoga viele weitere Sportarten wie Brazilian Jiu-Jitsu, Klettern und Radfahren."
+    "hobby": "In seiner Freizeit betreibt Nils neben Yoga viele weitere Sportarten wie Hyrox, Klettern und Radfahren."
   },
   "workshops": {
     "eyebrow": "Vor Ort",
     "title": "Präsenz-Workshops",
-    "text": "Gemeinsam auf der Matte — mit direktem Feedback, Hands-on-Assists und Raum für Fragen.",
+    "text": "Gemeinsam auf der Matte: mit direktem Feedback, Hands-on-Assists und Raum für Fragen.",
     "cta_label": "Details & Buchung →",
     "items": [
       {
@@ -82,7 +82,7 @@
   "online": {
     "eyebrow": "Von überall",
     "title": "Online-Kurse",
-    "text": "In deinem eigenen Tempo üben — mit klarer Anleitung, die auch aus der Distanz trägt.",
+    "text": "In deinem eigenen Tempo üben: mit klarer Anleitung, die auch aus der Distanz trägt.",
     "tag": "In Vorbereitung",
     "card_title": "Die ersten Online-Kurse kommen bald.",
     "card_text": "Nils arbeitet an Online-Kursen und E-Books, die Anatomie-Wissen direkt in deine Yoga-Praxis bringen. Trag dich in den Newsletter ein und du erfährst als Erste:r, wenn es losgeht.",
@@ -92,7 +92,7 @@
   "contact": {
     "eyebrow": "Kontakt",
     "title": "Fragen? Schreib mir.",
-    "text": "Ob Frage zum Workshop, Kooperation oder einfach ein Gruß — ich freue mich, von dir zu hören.",
+    "text": "Ob Frage zum Workshop, Kooperation oder einfach ein Gruß. Ich freue mich, von dir zu hören.",
     "email": "Physionils@gmail.com",
     "form_name": "Name",
     "form_email": "E-Mail",
